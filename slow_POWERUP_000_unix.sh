@@ -41,7 +41,7 @@ while [ $i -le 3 ]; do
 		echo "Ramp DOWN Voltage supplies to 0 V, 0 A..."
 		percival-hl-scan-setpoints -i 01_0_VDD_ON_step_${i} -f 00_0_0V0A -n ${i} -d 2000
 
-		break
+		exit 1
 	elif [[ $input == "y" || $input == "Y" ]]; then
 		echo "Continuing ramp UP voltage supplies"
 		j=${i}

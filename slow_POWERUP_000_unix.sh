@@ -52,6 +52,7 @@ while [ $i -le 3 ]; do
 	fi
 done
 
+percival-hl-update-monitors
 percival-hl-scan-setpoints -i 01_0_VDD_ON -f 02_0_LVDS_ON -n 4 -d 2000
 percival-hl-system-command -c enable_LVDS_IOs
 
